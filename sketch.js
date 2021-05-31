@@ -81,11 +81,16 @@ function draw() {
   if(keyDown(DOWN_ARROW)) {
 	Matter.Body.setStatic(packageBody,false);
 	}
-
 	if(keyCode === LEFT_ARROW){
-		helicopterSprite.x = helicopterSprite.x - 20;
+		helicopterSprite.x = helicopterSprite.x - 2;
+		Matter.Body.translate(packageBody,{x:-2,y:0});
 	}
 	if(keyCode === RIGHT_ARROW){
-	  helicopterSprite.x = helicopterSprite.x + 20;
+	  helicopterSprite.x = helicopterSprite.x + 2;
+	  Matter.Body.translate(packageBody,{x:2,y:0});
   }
+  
+	
+
+	
 }
