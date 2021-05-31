@@ -34,8 +34,7 @@ function setup() {
 	packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:0.4, isStatic:true});
 	World.add(world, packageBody);
 	
-	//helicopterbody = Bodies.rectangle(x, y, width, height, options);
-	//World.add(world, helicopterBody);
+	
 
 	//Create a Ground
 	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
